@@ -65,7 +65,7 @@
 
 % Heading
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Thamilmaran Mohanarasa}} & Email: \href{mailto:thamilmaranmohanarasa@gmail.com}{thamilmaranm@proton.me}\\
+  \textbf{{\LARGE Thamilmaran Mohanarasa}} & Email: \href{mailto:thamilmaranm@proton.me}{thamilmaranm@proton.me}\\
   \href{https://github.com/Maranmaxi2022}{Github: ~~Maranmaxi2022} & Mobile: +94-77-3028-673 \\
 \end{tabular*}
 
@@ -124,9 +124,9 @@
   \begin{itemize}\itemsep -2pt
   \item \textbf{Component study:} AMAE $\downarrow$ 0.746 $\rightarrow$ 0.723 and ASRC $\uparrow$ 0.958 $\rightarrow$ 0.960 with TST vs. LSTM.
   \item \textbf{Horizon MAE (lower is better):} 0.710 (Day-7), 0.737 (Day-14), 0.745 (Day-30) with competitive rank correlation.
-  \item \textbf{EP effect:} Including \textbf{Day-1 (EP)} as input \textbf{reduces error by $\sim$50\%+} vs. w/o-EP while maintaining strong late-day performance.
+  \item \textbf{EP effect:} Including \textbf{Day-1 (EP)} as input \textbf{reduces error by $\sim$50\%+} vs. w/o - EP while maintaining strong late-day performance.
   \end{itemize}
-  \item\textbf{Tech:} PyTorch, Transformers (mBERT), ResNet-101, TST, 5-fold evaluation, Spearman/MAE metrics, reproducible training \& eval scripts.
+  \item\textbf{Tech:} PyTorch, Transformers (mBERT), ResNet - 101, TST, 5 - fold evaluation, Spearman/MAE metrics, reproducible training \& eval scripts.
 \end{itemize}
 
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
@@ -139,6 +139,21 @@
   \item Implemented \textbf{stratified K-Fold CV} with OOF tracking; \textbf{constrained weight search} on OOF to blend SVR + ViT predictions.
   \item Added practical post-processing (\textbf{prediction clipping}; optional scaling) and deterministic runs (fixed seeds, shared folds).
   \item \textbf{Result: $\sim$[17.1] RMSE OOF} on ~[9.9k] training images (↓$\sim$17\% vs naive baseline \textbf{20.6 RMSE}); produced submission.csv for held-out test.
+  \item\textbf{Tech:} PyTorch, timm, RAPIDS cuML, scikit-learn, SciPy
 \end{itemize}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{\href{https://github.com/Maranmaxi2022/Top-Voice}{Top Voice - consultation \& booking platform}} & {Aug 2025 - Ongoing} \\
+\end{tabular*}
+\vspace{-6pt}
+\begin{itemize}\itemsep -2pt
+  \item Implemented creator profiles, availability calendars, time-slot booking, and end-to-end session flow.
+  \item Designed REST APIs with validation, pagination, and structured error handling; secured with JWT + role-based access (admin/creator/user).
+  \item Modeled MySQL schema (users, profiles, availability, bookings, sessions, reviews) with indexes for search \& conflict checks.
+  \item\textbf{Tech:} React, Spring Boot, MySQL
+\end{itemize}
+
+% Referees
+\section*{Referees}
 
 \end{document}
