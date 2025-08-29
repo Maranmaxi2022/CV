@@ -1,0 +1,144 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% CV Starts frm here
+
+\begin{document}
+
+% Heading
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Thamilmaran Mohanarasa}} & Email: \href{mailto:thamilmaranmohanarasa@gmail.com}{thamilmaranm@proton.me}\\
+  \href{https://github.com/Maranmaxi2022}{Github: ~~Maranmaxi2022} & Mobile: +94-77-3028-673 \\
+\end{tabular*}
+
+% Education
+\section*{Education}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{University of Moratuwa} & {Colombo, Sri Lanka} \\
+  {Bachelor of Science Honours in Information Technology (BScHons (IT))} & {June 2021 -- August 2025} \\
+\end{tabular*}
+
+\vspace{0.5em} % space between entries
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{Kn/ Kilinochchi Central College} & {Kilinochchi, Sri Lanka} \\
+  {G.C.E Advanced Level, Physical Science Stream (A, 2B)} & {Aug 2019} \\
+\end{tabular*}
+
+
+% Skill Summary
+\section*{Skills}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{5cm} p{13cm} @{}}
+\textbf{Programming Languages:}   & Python, Java, JavaScript \\
+\textbf{Packages:}  & Pandas, NumPy, Matplotlib, Sklearn, TensorFlow, PyTorch\\
+\textbf{Web Development:}   & HTML, CSS, React, Spring Boot \\
+\textbf{Technologies:}       & Git, Docker, Excel, Postman \\
+\end{tabular*}
+
+% Experience
+\section*{Experience}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{\href{https://qnetwork.ai/}{QNetwork}} & {Remote} \\
+  {AI Engineer - Intern} & {Apr 2024 -- Sep 2024} \\
+\end{tabular*}
+\vspace{-6pt}
+
+\begin{itemize}\itemsep -2pt
+  \item Built a predictive model for Canadian house prices using a dataset focused on Canadian properties.
+  \item Using Python-based libraries such as \textbf{NumPy}, \textbf{Pandas}, and \textbf{TensorFlow} to analyze data and develop models.
+  \item Developed an API to retrieve crime data for specific regions in Ontario, Canada.
+  \item Created dynamic front-end interfaces using \textbf{React} and implemented \textbf{Bootstrap CSS} for responsive design.
+  \item Conducted manual testing to ensure software quality and performance.
+\end{itemize}
+
+% Projects
+\section*{Projects}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{\href{https://github.com/Maranmaxi2022/FYP}{Multi-Modal Popularity Forecasting with a Time-Series Transformer}} & {Final Year Research} \\
+\end{tabular*}
+\vspace{-6pt}
+\begin{itemize}\itemsep -2pt
+  \item Replaced the LSTM head in the SMTPD baseline with a \textbf{Time-Series Transformer (TST)} while keeping the original \textbf{multi-modal encoders} (ResNet-101 thumbnail, mBERT text, categorical \& numeric features) and the same \textbf{Composite Gradient Loss}.
+  \item Implemented principled handling of \textbf{Early Popularity (EP)}: treat \textbf{Day-1} as input and shift prediction targets to \textbf{Days 2-30} to avoid leakage; added windowed evaluation (Day-7/14/30 and 1-30 or 2-30 ranges).
+  \item\textbf{Results:}
+  \begin{itemize}\itemsep -2pt
+  \item \textbf{Component study:} AMAE $\downarrow$ 0.746 $\rightarrow$ 0.723 and ASRC $\uparrow$ 0.958 $\rightarrow$ 0.960 with TST vs. LSTM.
+  \item \textbf{Horizon MAE (lower is better):} 0.710 (Day-7), 0.737 (Day-14), 0.745 (Day-30) with competitive rank correlation.
+  \item \textbf{EP effect:} Including \textbf{Day-1 (EP)} as input \textbf{reduces error by $\sim$50\%+} vs. w/o-EP while maintaining strong late-day performance.
+  \end{itemize}
+  \item\textbf{Tech:} PyTorch, Transformers (mBERT), ResNet-101, TST, 5-fold evaluation, Spearman/MAE metrics, reproducible training \& eval scripts.
+\end{itemize}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{\href{https://github.com/Maranmaxi2022/Pet-Finder}{PetFinder Pawpularity - Image Only Regression}} & {July 2025 - Aug 2025} \\
+\end{tabular*}
+\vspace{-6pt}
+
+\begin{itemize}\itemsep -2pt
+  \item Designed a \textbf{two-part pipeline}: (1) pretrained image \textbf{embeddings → SVR stacks}, and (2) \textbf{fine-tuned ViT} models for regression.
+  \item Implemented \textbf{stratified K-Fold CV} with OOF tracking; \textbf{constrained weight search} on OOF to blend SVR + ViT predictions.
+  \item Added practical post-processing (\textbf{prediction clipping}; optional scaling) and deterministic runs (fixed seeds, shared folds).
+  \item \textbf{Result: $\sim$[17.1] RMSE OOF} on ~[9.9k] training images (↓$\sim$17\% vs naive baseline \textbf{20.6 RMSE}); produced submission.csv for held-out test.
+\end{itemize}
+
+\end{document}
