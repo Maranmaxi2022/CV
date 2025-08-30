@@ -69,12 +69,17 @@
   \href{https://github.com/Maranmaxi2022}{Github: ~~Maranmaxi2022} & Mobile: +94-77-3028-673 \\
 \end{tabular*}
 
+% About me
+\section*{About me}
+\vspace{-8pt}
+Software developer passionate about building web-based systems and applied ML/AI.
+
 % Education
 \section*{Education}
-
+\vspace{-8pt}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
   \textbf{University of Moratuwa} & {Colombo, Sri Lanka} \\
-  {Bachelor of Science Honours in Information Technology (BScHons (IT))} & {June 2021 -- August 2025} \\
+  {BScHons in Information Technology} & {June 2021 -- August 2025} \\
 \end{tabular*}
 
 \vspace{0.5em} % space between entries
@@ -84,9 +89,26 @@
   {G.C.E Advanced Level, Physical Science Stream (A, 2B)} & {Aug 2019} \\
 \end{tabular*}
 
+% Experience
+\section*{Experience}
+\vspace{-8pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{\href{https://qnetwork.ai/}{QNetwork}} & {Remote} \\
+  {AI Engineer - Intern} & {Apr 2024 - Sep 2024} \\
+\end{tabular*}
+\vspace{-6pt}
+
+\begin{itemize}\itemsep -2pt
+  \item Built a predictive model for Canadian house prices using a dataset focused on Canadian properties.
+  \item Using Python-based libraries such as NumPy, Pandas, and TensorFlow to analyze data and develop models.
+  \item Developed an API to retrieve crime data for specific regions in Ontario, Canada.
+  \item Created dynamic front-end interfaces using React and implemented Bootstrap CSS for responsive design.
+  \item Conducted manual testing to ensure software quality and performance.
+\end{itemize}
 
 % Skill Summary
 \section*{Skills}
+\vspace{-8pt}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{5cm} p{13cm} @{}}
 \textbf{Programming Languages:}   & Python, Java, JavaScript \\
 \textbf{Packages:}  & Pandas, NumPy, Matplotlib, Sklearn, TensorFlow, PyTorch\\
@@ -94,37 +116,21 @@
 \textbf{Technologies:}       & Git, Docker, Excel, Postman \\
 \end{tabular*}
 
-% Experience
-\section*{Experience}
-
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
-  \textbf{\href{https://qnetwork.ai/}{QNetwork}} & {Remote} \\
-  {AI Engineer - Intern} & {Apr 2024 -- Sep 2024} \\
-\end{tabular*}
-\vspace{-6pt}
-
-\begin{itemize}\itemsep -2pt
-  \item Built a predictive model for Canadian house prices using a dataset focused on Canadian properties.
-  \item Using Python-based libraries such as \textbf{NumPy}, \textbf{Pandas}, and \textbf{TensorFlow} to analyze data and develop models.
-  \item Developed an API to retrieve crime data for specific regions in Ontario, Canada.
-  \item Created dynamic front-end interfaces using \textbf{React} and implemented \textbf{Bootstrap CSS} for responsive design.
-  \item Conducted manual testing to ensure software quality and performance.
-\end{itemize}
-
 % Projects
 \section*{Projects}
+\vspace{-8pt}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
   \textbf{\href{https://github.com/Maranmaxi2022/FYP}{Multi-Modal Popularity Forecasting with a Time-Series Transformer}} & {Final Year Research} \\
 \end{tabular*}
-\vspace{-6pt}
+\vspace{-12pt}
 \begin{itemize}\itemsep -2pt
-  \item Replaced the LSTM head in the SMTPD baseline with a \textbf{Time-Series Transformer (TST)} while keeping the original \textbf{multi-modal encoders} (ResNet-101 thumbnail, mBERT text, categorical \& numeric features) and the same \textbf{Composite Gradient Loss}.
-  \item Implemented principled handling of \textbf{Early Popularity (EP)}: treat \textbf{Day-1} as input and shift prediction targets to \textbf{Days 2-30} to avoid leakage; added windowed evaluation (Day-7/14/30 and 1-30 or 2-30 ranges).
+  \item Replaced the LSTM head in the SMTPD baseline with a Time-Series Transformer (TST) while keeping the original multi-modal encoders (ResNet-101 thumbnail, mBERT text, categorical \& numeric features) and the same Composite Gradient Loss.
+  \item Implemented principled handling of Early Popularity (EP): treat Day-1 as input and shift prediction targets to Days 2-30 to avoid leakage; added windowed evaluation (Day-7/14/30 and 1-30 or 2-30 ranges).
   \item\textbf{Results:}
   \begin{itemize}\itemsep -2pt
   \item \textbf{Component study:} AMAE $\downarrow$ 0.746 $\rightarrow$ 0.723 and ASRC $\uparrow$ 0.958 $\rightarrow$ 0.960 with TST vs. LSTM.
   \item \textbf{Horizon MAE (lower is better):} 0.710 (Day-7), 0.737 (Day-14), 0.745 (Day-30) with competitive rank correlation.
-  \item \textbf{EP effect:} Including \textbf{Day-1 (EP)} as input \textbf{reduces error by $\sim$50\%+} vs. w/o - EP while maintaining strong late-day performance.
+  \item \textbf{EP effect:} Including Day-1 (EP) as input reduces error by $\sim$50\%+ vs. w/o - EP while maintaining strong late-day performance.
   \end{itemize}
   \item\textbf{Tech:} PyTorch, Transformers (mBERT), ResNet - 101, TST, 5 - fold evaluation, Spearman/MAE metrics, reproducible training \& eval scripts.
 \end{itemize}
@@ -132,20 +138,20 @@
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
   \textbf{\href{https://github.com/Maranmaxi2022/Pet-Finder}{PetFinder Pawpularity - Image Only Regression}} & {July 2025 - Aug 2025} \\
 \end{tabular*}
-\vspace{-6pt}
-
+\vspace{-12pt}
 \begin{itemize}\itemsep -2pt
-  \item Designed a \textbf{two-part pipeline}: (1) pretrained image \textbf{embeddings → SVR stacks}, and (2) \textbf{fine-tuned ViT} models for regression.
-  \item Implemented \textbf{stratified K-Fold CV} with OOF tracking; \textbf{constrained weight search} on OOF to blend SVR + ViT predictions.
-  \item Added practical post-processing (\textbf{prediction clipping}; optional scaling) and deterministic runs (fixed seeds, shared folds).
-  \item \textbf{Result: $\sim$[17.1] RMSE OOF} on ~[9.9k] training images (↓$\sim$17\% vs naive baseline \textbf{20.6 RMSE}); produced submission.csv for held-out test.
+  \item Designed a two-part pipeline: (1) pretrained image embeddings → SVR stacks, and (2) fine-tuned ViT models for regression.
+  \item Implemented stratified K-Fold CV with OOF tracking; constrained weight search on OOF to blend SVR + ViT predictions.
+  \item Added practical post-processing (prediction clipping; optional scaling) and deterministic runs (fixed seeds, shared folds).
+  \item \textbf{Result:} $\sim$[17.1] RMSE OOF on $\sim$9.9k training images (↓$\sim$17\% vs naive baseline 20.6 RMSE)
   \item\textbf{Tech:} PyTorch, timm, RAPIDS cuML, scikit-learn, SciPy
 \end{itemize}
 
+\newpage
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
   \textbf{\href{https://github.com/Maranmaxi2022/Top-Voice}{Top Voice - consultation \& booking platform}} & {Aug 2025 - Ongoing} \\
 \end{tabular*}
-\vspace{-6pt}
+\vspace{-12pt}
 \begin{itemize}\itemsep -2pt
   \item Implemented creator profiles, availability calendars, time-slot booking, and end-to-end session flow.
   \item Designed REST APIs with validation, pagination, and structured error handling; secured with JWT + role-based access (admin/creator/user).
@@ -155,5 +161,17 @@
 
 % Referees
 \section*{Referees}
+\vspace{-8pt}
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Dr.\ (Ms.) Ahangama S,}\\
+PhD (NUS), BSc (Hons) IT (Moratuwa),\\
+Senior Lecturer (Grade I),\\
+Faculty of Information Technology,\\
+University of Moratuwa.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Sanjeepan S.,}\\
+ML Engineer - H2O.ai.\\
+\end{minipage}
 
 \end{document}
